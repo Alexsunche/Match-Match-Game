@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Match-Match-Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="content" id="content">
+        <div class="start-info" id="start-info">
+          <h1>Welcom to the Match-Match-Game  </h1>
+          <h2>How to Play:</h2>
+          <p>Memmory is a counter game where the object is to find pairs.</p>
+          <p>When the game begins, all pictures are hidden.</p>
+          <ol>
+              <li>Select two cards to try to match the pistures.</li>
+              <li>If you match the pictures you can go again.</li>
+              <li>If they don't match it is the computer turn them.</li>
+              <li>Your scpre will be time*complexity(1,2 or 3)</li>
+              <li>Have Fun!</li>
+          </ol>
+          <div class="btn1" id="btn1" onclick="renderForm()">let's play</div>
+        </div>
+          <div class="form-box" id="form-box">
+            <h2>Введите личные данные</h2>
+            <form action="#" method="post">
+              <label for="first-name">First Name :</label>
+              <input type="text" id="first-name">
+              <label for="last-name">Last Name :</label>
+              <input type="text" id="last-name">
+              <label for="email">Email &#160 &#160 &#160 &#160; :</label>
+              <input type="email" id="email">
+            </form>
+            <select size="1" name="difficulties" class="diff-select">
+              <option>Выберите сложность</option>
+              <option value="8">легко (8 карт)</option>
+              <option value="12">средне (12 карт)</option>
+              <option value="16">трудно (16 карт)</option>\
+           </select>
+           <div class="cover-card">
+             <h3>Выберете обложку</h3>
+             <input type="checkbox" id="first-type">
+             <label class="check-label" for="first-type">
+               <img class="check-img" src="covers\first-type\1.png" alt="#">
+             </label>
+             <input type="checkbox" id="second-type">
+             <label class="check-label" for="second-type">
+               <img class="check-img" src="covers\second-type\1.png" alt="#">
+             </label>
+             <input type="checkbox" id="third-type">
+             <label class="check-label" for="third-type">
+               <img class="check-img" src="covers\third-type\1.png" alt="#">
+             </label>
+           </div>
+           <input type="button"  class="btn-submit" onclick="saveInfo()" value="принять">
+          </div>
+      </div>
+      <p class="clock" id="clock"></p>
+      <div class="score-box" id="score-box">
+        <h2>Results Board</h2>
+        <p id="score-paragraph"></p>
+        <button type="button" class="btn1" onclick = "window.location.reload()" id="new-game">New Game</button>
+      </div>
+    </main>
+    <script src="JS/script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid white;
+  border-radius: 15%;
+  height: 90vh;
+  width:50%;
+  margin:0 auto;
+  margin-top: 7vh;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 20px;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.start-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+h2, h1 {
+    color:coral;
+    font-size: 26px;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    color: coral;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+ol {
+    font-size: 18px;
+    color: coral;
+    text-align: center;
+    width: 400px;;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+li {
+  margin:20px;
+}
+.btn1{
+    border-radius: 5px;
+    display: block;
+    background-color: coral;
+    line-height: 30px;
+    color:white;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 120px;
+    text-align: center;
+}
+.form-box {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -20px;
+  margin: 0 auto;
+  width:70%;
+}
+form label {
+  color: coral;
+  font-size: 15px;
+  float: left;
+}
+.form-box form input {
+  display: block;
+  margin: 10px;
+  width: 60%;
+  height: 20px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  color: coral;
+  font-size: 20px;
+}
+.btn-submit {
+  border-radius: 5px;
+  display: inline-block;
+  background-color: coral;
+  margin-top: -15px;
+  padding: 0 30px;
+  line-height: 40px;
+  color:white;
+  cursor: pointer;
+  font-size: 32px;
+}
+.diff-select {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  display: block;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.check-label {
+margin: 0 20px;
+width:50px;
+height: 50px;
+}
+.check-img {
+  width:50px;
+  height: 50px;
+}
+h3 {
+  margin-top: -20px;
+  font-size: 20px;
+  color: coral;
+  text-align: center;
+}
+.cover-card {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: auto;
+}
+input[type=checkbox]:checked + label img{
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.card {
+  background-image:url(../covers/jacket.png) ;
+  border: 2px solid coral;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  margin:5px auto;
+  cursor: pointer;
+}
+.clock {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  font-size: 50px;
+}
+.score-box {
+  display: none;
+}
